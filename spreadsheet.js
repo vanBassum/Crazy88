@@ -10,7 +10,7 @@ const data = []
 document.addEventListener('DOMContentLoaded', init)
 const output = document.querySelector('.output')
 function init() {
-    fetch(url, { mode: 'no-cors'})
+    fetch(url)
         .then(res => res.text())
         .then(rep => {
             //Remove additional text and extract only JSON:
