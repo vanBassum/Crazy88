@@ -15,7 +15,7 @@ function init() {
         .then(rep => {
             //Remove additional text and extract only JSON:
             const jsonData = JSON.parse(rep.substring(47).slice(0, -2));
-            console.log(rep)
+            console.log(rep);
             const colz = [];
             const tr = document.createElement('tr');
             //Extract column labels
@@ -26,11 +26,15 @@ function init() {
                     const th = document.createElement('th');
                     th.innerText = column;
                     tr.appendChild(th);
+					
+					console.log(column);
                 }
             })
             output.appendChild(tr);
             //extract row data:
             jsonData.table.rows.forEach((rowData) => {
+				
+					console.log(rowData);
                 const row = {};
                 colz.forEach((ele, ind) => {
                     row[ele] = (rowData.c[ind] != null) ? rowData.c[ind].v : '';
