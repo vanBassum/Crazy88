@@ -2,83 +2,6 @@
 <html>
 <head>
   <title>Crazy 88 - The Quest Begins!</title>
-  <style>
-    body {
-      background-color: #763C00;
-      color: #F9F7DC;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      text-align: center;
-      padding: 50px;
-    }
-
-    h1 {
-      font-size: 100px;
-      margin-bottom: 40px;
-    }
-
-    p {
-      font-size: 20px;
-      margin-bottom: 60px;
-    }
-
-    .button {
-      background-color: #EF8535;
-      color: #F9F7DC;
-      padding: 50px;
-      font-size: 28px;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-      width: 80%;
-      margin: 0 auto;
-    }
-
-    .button:hover {
-      background-color: #E27300;
-    }
-	
-	table {
-          font-family: Arial, Helvetica, sans-serif;
-          border-collapse: collapse;
-          width: 100%;
-        }
-        
-        table td, table th {
-          padding: 8px;
-        }
-        table tr:nth-child(even){background-color: #763C00;}
-        table tr:hover {background-color: #763C00;}
-        
-        table th {
-          padding-top: 12px;
-          padding-bottom: 12px;
-          background-color: #EF8535;
-          color: white;
-        }
-  </style>
-  <script>
-    function redirectToRandomURL() {
-      var urls = [
-        "https://docs.google.com/forms/d/e/1FAIpQLSerq5QDkI5csUhHUycyKlE5yXmEKihTTx27xZCPXiydtHSQMA/viewform?usp=sf_link",	//Aqua, Hikes and more
-        "https://docs.google.com/forms/d/e/1FAIpQLSedt1wtIMz1rXphAXaCmu3eX76jWsCJH3hKNVIXqsXfZZnIMg/viewform?usp=sf_link",	//Halfweg
-        "https://docs.google.com/forms/d/e/1FAIpQLSd-WTAWQHekPEbi87RVvVAsVJQCQs6obIPn3IkUNyt6JgiKiA/viewform?usp=sf_link",	//Boulevard
-		"https://docs.google.com/forms/d/e/1FAIpQLSdLh26-VaJ4MWzxVGQ9bZ2PCoNywKd1ppCbDvdSzGXzKve_FQ/viewform?usp=sf_link",	//Subcamp Yellow
-        "https://docs.google.com/forms/d/e/1FAIpQLSejNnJlbor-7g7hDXOGhaxwMpk4ct51bBVRJxiIg_hjXX6Hog/viewform?usp=sf_link",	//Subcamp red
-        "https://docs.google.com/forms/d/e/1FAIpQLSffZIMTh2ka492rVGr6owWga4BsYsAeGgGRjLnBdvIJa5L_VQ/viewform?usp=sf_link",	//Subcamp orange
-        "https://docs.google.com/forms/d/e/1FAIpQLSeNxLFry3662TQf5EFFbEkxr_DB_2CTTbAEjh9P-solZQacTA/viewform?usp=sf_link"	//Subcamp green
-      ];
-
-      var randomIndex = Math.floor(Math.random() * urls.length);
-      var randomURL = urls[randomIndex];
-
-      window.location.href = randomURL;
-    }
-  </script>
 </head>
 <body>
   <div class="container">
@@ -91,6 +14,8 @@
     <h1 style="text-align: center;">Score</h1>
     <table class="output"></table>
     <script src="spreadsheet.js"></script>
+    <script src="utils.js"></script>
+    <link rel="stylesheet" href="style.css">
   </div>
 </body>
 </html>

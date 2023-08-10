@@ -20,7 +20,7 @@ function init() {
             
 	})
 	.catch(err =>{
-		const jsonData = {"version":"0.6","reqId":"0","status":"ok","sig":"2015199486","table":{"cols":[{"id":"A","label":"","type":"string"},{"id":"B","label":"","type":"number","pattern":"General"}],"rows":[{"c":[{"v":"Rowin"},{"v":26.0,"f":"26"}]},{"c":[{"v":"Crazy 69"},{"v":25.0,"f":"25"}]},{"c":[{"v":"De rijnlandpino\u0027s"},{"v":18.0,"f":"18"}]},{"c":[{"v":"The red cool ducks "},{"v":18.0,"f":"18"}]},{"c":[{"v":"Slay girls"},{"v":17.0,"f":"17"}]},{"c":[{"v":"Jan wandelaar"},{"v":12.0,"f":"12"}]},{"c":[{"v":"Cavianeus"},{"v":12.0,"f":"12"}]},{"c":[{"v":"The winners "},{"v":11.0,"f":"11"}]},{"c":[{"v":"I don\u2019t know"},{"v":10.0,"f":"10"}]},{"c":[{"v":"Red bread 🍞"},{"v":10.0,"f":"10"}]},{"c":[{"v":"La vida loca"},{"v":8.0,"f":"8"}]},{"c":[{"v":"Albatros girls are the best!"},{"v":8.0,"f":"8"}]},{"c":[{"v":"Quackers "},{"v":6.0,"f":"6"}]},{"c":[{"v":"One man army "},{"v":6.0,"f":"6"}]},{"c":[{"v":"Graaf floris V 2.0"},{"v":5.0,"f":"5"}]},{"c":[{"v":"The 5 musketeers "},{"v":4.0,"f":"4"}]},{"c":[{"v":"Villacher Bier"},{"v":4.0,"f":"4"}]},{"c":[{"v":"The ducks"},{"v":3.0,"f":"3"}]}],"parsedNumHeaders":0}};
+		const jsonData = {"version": "0.6","reqId": "0","status": "ok","sig": "2015199486","table": {"cols": [{"id": "A","label": "","type": "string"},{"id": "B","label": "","type": "number","pattern": "General"}],"rows": [{"c": [{"v": "Test 1"},{"v": 26,"f": "26"}]},{"c": [{"v": "Test 2"},{"v": 4,"f": "4"}]},{"c": [{"v": "Test 3"},{"v": 3,"f": "3"}]}],"parsedNumHeaders": 0}};
 		LoadData(jsonData);
 	})
 }
